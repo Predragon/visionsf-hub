@@ -1,73 +1,124 @@
-# React + TypeScript + Vite
+# VisionSF Marketing Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional marketing website for VisionSF - an AI-native software development agency based in San Francisco.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework**: React 19 + TypeScript
+- **Styling**: Tailwind CSS v4
+- **Build**: Vite 7
+- **Icons**: Lucide React
+- **Routing**: React Router DOM v7
+- **Deployment**: Cloudflare Pages
 
-## React Compiler
+## Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# Start development server
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Build for production
+npm run build
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Preview production build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/
+│   ├── Navigation.tsx    # Responsive nav with mobile menu
+│   ├── Hero.tsx          # Landing hero with CTAs
+│   ├── Services.tsx      # Service offerings and pricing
+│   ├── HowItWorks.tsx    # 4-step process timeline
+│   ├── Portfolio.tsx     # Case studies showcase
+│   ├── About.tsx         # Founder story and values
+│   ├── Contact.tsx       # Contact form
+│   └── Footer.tsx        # Site footer
+├── pages/
+│   ├── Home.tsx          # Main landing page
+│   ├── ServicesPage.tsx  # Services detail page
+│   └── AboutPage.tsx     # About detail page
+├── App.tsx               # Router configuration
+├── main.tsx              # Entry point
+└── index.css             # Tailwind v4 configuration
+```
+
+## Deployment to Cloudflare Pages
+
+### Option 1: GitHub Integration (Recommended)
+
+1. Push to GitHub repository
+2. Go to Cloudflare Dashboard > Pages
+3. Create new project > Connect to Git
+4. Select your repository
+5. Configure build settings:
+   - Build command: `npm run build`
+   - Build output directory: `dist`
+   - Node.js version: 20
+
+### Option 2: Direct Upload
+
+```bash
+# Build the project
+npm run build
+
+# Install Wrangler CLI
+npm install -g wrangler
+
+# Login to Cloudflare
+wrangler login
+
+# Deploy
+wrangler pages deploy dist --project-name=visionsf-hub
+```
+
+## Configuration
+
+### Environment Variables (Optional)
+
+None required for static deployment.
+
+### Form Integration
+
+The contact form uses Formspree. To enable:
+
+1. Create account at [Formspree](https://formspree.io)
+2. Create new form
+3. Replace `your-form-id` in `src/components/Contact.tsx` with your form ID
+
+### Analytics (Optional)
+
+Add Plausible or Simple Analytics script to `index.html` head section.
+
+## Features
+
+- Responsive design (mobile-first)
+- Smooth scroll navigation
+- Sticky header with scroll effect
+- Mobile hamburger menu
+- Active section highlighting
+- Contact form with validation
+- SEO meta tags
+- Open Graph social cards
+- Security headers
+
+## Performance
+
+- Tailwind CSS purges unused styles
+- Code splitting via React Router
+- Optimized production build
+- Assets cached with immutable headers
+
+## License
+
+MIT
+
+---
+
+Built with Workshop by VisionSF
