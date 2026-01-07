@@ -58,7 +58,7 @@ const About: React.FC<AboutProps> = () => {
             {/* Story Content */}
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Not a developer by training, Fredy Castellon had a vision: make software
+                Not a developer by training, Nenad Mirkovic had a vision: make software
                 development accessible to everyone. Frustrated with traditional development's
                 slow timelines and high costs, he built Workshop - an AI platform that learns
                 from every project.
