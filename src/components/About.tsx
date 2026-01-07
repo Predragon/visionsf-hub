@@ -54,7 +54,7 @@ const About: React.FC<AboutProps> = () => {
                 <img
                   src="/images/nenad-photo.jpg"
                   alt="Nenad Mirkovic - Founder of VisionSF"
-                  className="w-full h-full object-cover object-bottom"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
