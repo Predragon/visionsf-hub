@@ -52,7 +52,7 @@ const About: React.FC<AboutProps> = () => {
             <div className="flex justify-center lg:justify-start">
               <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-100">
                 <img
-                  src="/images/founder-photo.jpg"
+                  src="/images/nenad-photo.jpg"
                   alt="Nenad Mirkovic - Founder of VisionSF"
                   className="w-full h-full object-cover"
                 />
