@@ -47,7 +47,7 @@ const Contact: React.FC<ContactProps> = () => {
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="mt-6 text-indigo-600 hover:text-indigo-700 font-medium"
+                  className="mt-6 text-primary-600 hover:text-primary-700 font-medium"
                 >
                   Send another message
                 </button>
@@ -76,7 +76,7 @@ const Contact: React.FC<ContactProps> = () => {
                     name="name"
                     required
                     placeholder="Your full name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors placeholder-gray-400"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors placeholder-gray-400"
                   />
                 </div>
 
@@ -94,7 +94,7 @@ const Contact: React.FC<ContactProps> = () => {
                     name="email"
                     required
                     placeholder="you@company.com"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors placeholder-gray-400"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors placeholder-gray-400"
                   />
                 </div>
 
@@ -111,7 +111,7 @@ const Contact: React.FC<ContactProps> = () => {
                     name="project_type"
                     required
                     defaultValue=""
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors bg-white text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors bg-white text-gray-900"
                   >
                     <option value="" disabled>
                       Select a project type
@@ -136,7 +136,7 @@ const Contact: React.FC<ContactProps> = () => {
                     name="budget"
                     required
                     defaultValue=""
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors bg-white text-gray-900"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors bg-white text-gray-900"
                   >
                     <option value="" disabled>
                       Select your budget
@@ -161,14 +161,14 @@ const Contact: React.FC<ContactProps> = () => {
                     name="message"
                     rows={4}
                     placeholder="Tell us about your project, goals, and timeline..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors placeholder-gray-400 resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors placeholder-gray-400 resize-none"
                   />
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  className="w-full bg-accent-500 hover:bg-accent-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   <Send className="w-5 h-5" />
                   Start Your Project
@@ -181,8 +181,8 @@ const Contact: React.FC<ContactProps> = () => {
           <div className="flex flex-col justify-center space-y-8">
             {/* Email Contact */}
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                <Mail className="w-6 h-6 text-indigo-600" />
+              <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                <Mail className="w-6 h-6 text-primary-600" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">
@@ -190,7 +190,7 @@ const Contact: React.FC<ContactProps> = () => {
                 </h3>
                 <a
                   href="mailto:hello@visionsf.com"
-                  className="text-indigo-600 hover:text-indigo-700 font-medium transition-colors"
+                  className="text-primary-600 hover:text-primary-700 font-medium transition-colors"
                 >
                   hello@visionsf.com
                 </a>
@@ -199,8 +199,8 @@ const Contact: React.FC<ContactProps> = () => {
 
             {/* Calendar Link */}
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                <Calendar className="w-6 h-6 text-indigo-600" />
+              <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                <Calendar className="w-6 h-6 text-primary-600" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">
@@ -208,7 +208,7 @@ const Contact: React.FC<ContactProps> = () => {
                 </h3>
                 <a
                   href="#"
-                  className="text-indigo-600 hover:text-indigo-700 font-medium transition-colors"
+                  className="text-primary-600 hover:text-primary-700 font-medium transition-colors"
                 >
                   Schedule a call
                 </a>
@@ -217,8 +217,8 @@ const Contact: React.FC<ContactProps> = () => {
 
             {/* Response Time */}
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                <Clock className="w-6 h-6 text-indigo-600" />
+              <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                <Clock className="w-6 h-6 text-primary-600" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">
@@ -231,16 +231,16 @@ const Contact: React.FC<ContactProps> = () => {
             </div>
 
             {/* Additional Info Card */}
-            <div className="mt-8 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-6 text-white">
+            <div className="mt-8 bg-gradient-to-br from-primary-600 to-accent-600 rounded-2xl p-6 text-white">
               <h3 className="text-xl font-semibold mb-3">
                 Not sure where to start?
               </h3>
-              <p className="text-indigo-100 mb-4">
+              <p className="text-primary-100 mb-4">
                 No worries! Schedule a free consultation and we'll help you figure out the best approach for your project.
               </p>
               <a
                 href="#"
-                className="inline-flex items-center gap-2 bg-white text-indigo-600 font-semibold px-5 py-3 rounded-lg hover:bg-indigo-50 transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-primary-600 font-semibold px-5 py-3 rounded-lg hover:bg-primary-50 transition-colors"
               >
                 <Calendar className="w-5 h-5" />
                 Book Free Consultation

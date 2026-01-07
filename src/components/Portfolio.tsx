@@ -34,7 +34,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Left Side - Project Mockup Placeholder */}
             <div className="relative h-64 lg:h-auto min-h-[300px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white">
                     <div className="w-48 h-32 mx-auto mb-4 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
@@ -49,8 +49,8 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             {/* Right Side - Case Study Content */}
             <div className="p-8 lg:p-12">
               <div className="flex items-center gap-2 mb-4">
-                <Clock className="w-4 h-4 text-blue-600" />
-                <span className="text-sm font-medium text-blue-600">21 Day Delivery</span>
+                <Clock className="w-4 h-4 text-primary-600" />
+                <span className="text-sm font-medium text-primary-600">21 Day Delivery</span>
               </div>
 
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
@@ -89,7 +89,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
                       className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 shadow-sm"
                     >
                       <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                        <result.icon className="w-5 h-5 text-blue-600" />
+                        <result.icon className="w-5 h-5 text-primary-600" />
                       </div>
                       <div>
                         <p className="text-2xl font-bold text-gray-900">{result.value}</p>

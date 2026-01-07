@@ -58,7 +58,7 @@ const ServiceCardComponent: React.FC<{ service: ServiceCard }> = ({ service }) =
     <div
       className={`relative group rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
         isSpecialCard
-          ? 'bg-gradient-to-br from-indigo-600 to-purple-700 text-white'
+          ? 'bg-gradient-to-br from-primary-600 to-accent-600 text-white'
           : 'bg-white border border-gray-200 hover:border-gray-300'
       }`}
     >
@@ -74,7 +74,7 @@ const ServiceCardComponent: React.FC<{ service: ServiceCard }> = ({ service }) =
         className={`inline-flex items-center justify-center w-14 h-14 rounded-xl mb-4 ${
           isSpecialCard
             ? 'bg-white/20'
-            : 'bg-indigo-100 text-indigo-600'
+            : 'bg-primary-100 text-primary-600'
         }`}
       >
         {service.icon}
@@ -92,7 +92,7 @@ const ServiceCardComponent: React.FC<{ service: ServiceCard }> = ({ service }) =
       {/* Description */}
       <p
         className={`text-sm mb-4 leading-relaxed ${
-          isSpecialCard ? 'text-indigo-100' : 'text-gray-600'
+          isSpecialCard ? 'text-primary-100' : 'text-gray-600'
         }`}
       >
         {service.description}
@@ -113,8 +113,8 @@ const ServiceCardComponent: React.FC<{ service: ServiceCard }> = ({ service }) =
           href="#contact"
           className={`inline-flex items-center gap-1 text-sm font-medium transition-colors ${
             isSpecialCard
-              ? 'text-white hover:text-indigo-200'
-              : 'text-indigo-600 hover:text-indigo-700'
+              ? 'text-white hover:text-primary-200'
+              : 'text-primary-600 hover:text-primary-700'
           }`}
         >
           Learn More
