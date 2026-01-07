@@ -19,8 +19,13 @@ const Hero: React.FC<HeroProps> = () => {
       id="home"
       className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white"
     >
-      {/* Subtle background decoration */}
+      {/* Background image with decorative overlays */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <img
+          src="/images/hero-background.svg"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-60"
+        />
         <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-primary-100/50 blur-3xl" />
         <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-accent-100/50 blur-3xl" />
       </div>

@@ -48,10 +48,14 @@ const About: React.FC<AboutProps> = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left Column - Founder Story */}
           <div className="space-y-8">
-            {/* Founder Photo Placeholder */}
+            {/* Founder Photo */}
             <div className="flex justify-center lg:justify-start">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-br from-primary-500 via-accent-500 to-primary-600 shadow-lg flex items-center justify-center">
-                <span className="text-4xl sm:text-5xl font-bold text-white">FC</span>
+              <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-100">
+                <img
+                  src="/images/founder-avatar.svg"
+                  alt="Nenad Mirkovic - Founder of VisionSF"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

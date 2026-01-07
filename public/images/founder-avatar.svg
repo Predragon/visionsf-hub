@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#E0E7FF"/>
+  
+  <!-- Abstract silhouette shape -->
+  <path d="M100 40 C120 40 140 60 140 85 C140 110 120 130 100 130 C80 130 60 110 60 85 C60 60 80 40 100 40 Z" fill="#6366F1" opacity="0.8"/>
+  
+  <!-- Shoulders/neck abstraction -->
+  <path d="M70 135 Q100 145 130 135 L130 160 Q100 170 70 160 Z" fill="#4F46E5" opacity="0.9"/>
+  
+  <!-- Tech accent dots -->
+  <circle cx="85" cy="75" r="3" fill="#FFFFFF"/>
+  <circle cx="115" cy="95" r="3" fill="#FFFFFF"/>
+  <circle cx="95" cy="110" r="2" fill="#FFFFFF" opacity="0.7"/>
+  
+  <!-- Outer ring decoration -->
+  <circle cx="100" cy="100" r="95" stroke="#6366F1" stroke-width="2" stroke-dasharray="4 4" opacity="0.3"/>
+</svg>

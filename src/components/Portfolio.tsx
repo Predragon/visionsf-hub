@@ -32,18 +32,13 @@ const Portfolio: React.FC<PortfolioProps> = () => {
         {/* Featured Case Study Card */}
         <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-0">
-            {/* Left Side - Project Mockup Placeholder */}
-            <div className="relative h-64 lg:h-auto min-h-[300px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="w-48 h-32 mx-auto mb-4 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-                      <span className="text-white/60 text-sm">Project Screenshot</span>
-                    </div>
-                    <p className="text-white/80 text-sm font-medium">Sip & Sing PWA</p>
-                  </div>
-                </div>
-              </div>
+            {/* Left Side - Project Mockup */}
+            <div className="relative h-64 lg:h-auto min-h-[300px] bg-gray-100">
+              <img
+                src="/images/sip-sing-mockup.svg"
+                alt="Sip & Sing PWA - Restaurant ordering and loyalty app"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
             </div>
 
             {/* Right Side - Case Study Content */}

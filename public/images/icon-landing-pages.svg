@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Landing page icon - stacked sections -->
+  <rect x="8" y="12" width="48" height="8" rx="2" fill="#6366F1"/>
+  <rect x="8" y="24" width="48" height="18" rx="2" fill="#A5B4FC" opacity="0.5"/>
+  <rect x="8" y="46" width="20" height="6" rx="1" fill="#A5B4FC" opacity="0.3"/>
+  <rect x="30" y="46" width="12" height="6" rx="1" fill="#A5B4FC" opacity="0.3"/>
+  <rect x="44" y="46" width="12" height="6" rx="1" fill="#A5B4FC" opacity="0.3"/>
+  
+  <!-- CTA button -->
+  <rect x="24" y="29" width="16" height="6" rx="2" fill="#6366F1"/>
+  
+  <!-- Callout circles -->
+  <circle cx="50" cy="20" r="3" fill="#6366F1"/>
+  <circle cx="54" cy="20" r="1" fill="#FFFFFF"/>
+</svg>

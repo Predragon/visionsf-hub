@@ -1,0 +1,66 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="deviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#2a2a2a"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F9FAFB"/>
+      <stop offset="100%" style="stop-color:#E5E7EB"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F3F4F6"/>
+  
+  <!-- Laptop Frame -->
+  <g transform="translate(150, 100)">
+    <!-- Screen Bezel -->
+    <rect x="0" y="0" width="500" height="320" rx="8" fill="url(#deviceGrad)"/>
+    <!-- Screen Content -->
+    <rect x="4" y="4" width="492" height="312" rx="4" fill="url(#screenGrad)"/>
+    
+    <!-- App Header Mockup -->
+    <rect x="8" y="8" width="484" height="40" fill="#3B82F6" opacity="0.9"/>
+    <text x="20" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Sip & Sing</text>
+    
+    <!-- Hero Section Mockup -->
+    <rect x="8" y="52" width="200" height="60" fill="#8B5CF6" opacity="0.7"/>
+    <text x="18" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Karaoke Nights</text>
+    <text x="18" y="102" font-family="Arial, sans-serif" font-size="10" fill="white" opacity="0.9">Book your table</text>
+    
+    <!-- Booking Card -->
+    <rect x="220" y="52" width="272" height="100" fill="white" rx="4"/>
+    <rect x="228" y="60" width="80" height="12" fill="#E5E7EB" rx="2"/>
+    <rect x="228" y="76" width="120" height="8" fill="#F3F4F6" rx="2"/>
+    <rect x="228" y="90" width="60" height="20" fill="#10B981" rx="4"/>
+    <text x="238" y="104" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Book Now</text>
+    
+    <!-- Navigation -->
+    <rect x="8" y="280" width="484" height="32" fill="white"/>
+    <circle cx="30" cy="296" r="8" fill="#3B82F6"/>
+    <circle cx="50" cy="296" r="8" fill="#E5E7EB"/>
+    <circle cx="70" cy="296" r="8" fill="#E5E7EB"/>
+    
+    <!-- Stats Cards -->
+    <rect x="8" y="156" width="150" height="110" fill="white" rx="4"/>
+    <text x="18" y="178" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">+40%</text>
+    <text x="18" y="194" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Online Orders</text>
+    
+    <rect x="164" y="156" width="150" height="110" fill="white" rx="4"/>
+    <text x="174" y="178" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">300+</text>
+    <text x="174" y="194" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Members</text>
+    
+    <rect x="320" y="156" width="172" height="110" fill="white" rx="4"/>
+    <text x="330" y="178" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">14 days</text>
+    <text x="330" y="194" font-family="Arial, sans-serif" font-size="9" fill="#6B7280">Avg Delivery</text>
+  </g>
+  
+  <!-- Shadow -->
+  <ellipse cx="400" cy="470" rx="200" ry="15" fill="#000000" opacity="0.1"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="720" cy="80" r="30" fill="#3B82F6" opacity="0.2"/>
+  <circle cx="750" cy="120" r="20" fill="#8B5CF6" opacity="0.2"/>
+  <circle cx="80" cy="520" r="25" fill="#10B981" opacity="0.2"/>
+</svg>
