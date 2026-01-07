@@ -35,7 +35,7 @@ const Portfolio: React.FC<PortfolioProps> = () => {
             {/* Left Side - Project Mockup */}
             <div className="relative h-64 lg:h-auto min-h-[300px] bg-gray-100">
               <img
-                src="/images/sip-sing-mockup.svg"
+                src="/images/laptop-mockup.jpg"
                 alt="Sip & Sing PWA - Restaurant ordering and loyalty app"
                 className="absolute inset-0 h-full w-full object-cover"
               />

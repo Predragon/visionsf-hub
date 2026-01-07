@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = () => {
       {/* Background image with decorative overlays */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <img
-          src="/images/hero-background.svg"
+          src="/images/hero-background.jpg"
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-60"
         />
