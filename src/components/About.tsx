@@ -62,10 +62,9 @@ const About: React.FC<AboutProps> = () => {
             {/* Story Content */}
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Not a developer by training, Nenad Mirkovic had a vision: make software
-                development accessible to everyone. Frustrated with traditional development's
-                slow timelines and high costs, he built Workshop - an AI platform that learns
-                from every project.
+                Nenad is an electrician and musician who got frustrated paying developers
+                $20K for websites. So he taught AI to code instead. Now that AI builds
+                software for others.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Now, that same technology powers VisionSF. We're not just building software;

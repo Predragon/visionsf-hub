@@ -75,7 +75,7 @@ export default function Navigation() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 shadow-md backdrop-blur-sm'
+          ? 'bg-white shadow-md'
           : 'bg-white'
       }`}
     >

@@ -48,7 +48,7 @@ const Hero: React.FC<HeroProps> = () => {
 
           {/* Subheadline */}
           <p
-            className={`mt-6 max-w-2xl text-lg leading-relaxed text-gray-600 transition-all delay-150 duration-700 ease-out md:text-xl ${
+            className={`mt-6 max-w-2xl text-lg leading-relaxed text-gray-800 transition-all delay-150 duration-700 ease-out md:text-xl ${
               isVisible
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-8 opacity-0'
